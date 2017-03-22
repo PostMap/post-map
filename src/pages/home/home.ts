@@ -27,22 +27,12 @@ export class HomePage {
 
   }
   
-
-// addLike(URL){
-//   let database=firebase.database().ref();
-//   database.child("assets").
-// }
-go(){
-  console.log("ggggggg")
-}
    addInfoWindow(marker, message) {
-            let div ="<div>"
-          
+            let div ="<div>";
             for(let i of message){
               
-              div+="<div class='item item-body' height='100%'>"+"<img src ="+i+"/>"+"</div>"
+              div+="<img style='width: 240px; height: 200px;' src ="+i+"/>"+'</div>'
               div+="<br>"
-
             }
 
             let infoWindow = new google.maps.InfoWindow({
